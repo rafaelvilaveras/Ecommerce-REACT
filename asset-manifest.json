@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ecommerce-React/static/css/main.4517112b.css",
+    "main.css": "/Ecommerce-React/static/css/main.26c2cb1b.css",
     "main.js": "/Ecommerce-React/static/js/main.b5dd51f2.js",
     "static/js/787.dcc73137.chunk.js": "/Ecommerce-React/static/js/787.dcc73137.chunk.js",
     "static/media/image-product-2.jpg": "/Ecommerce-React/static/media/image-product-2.c8bb0aaccecdebb16596.jpg",
@@ -11,12 +11,12 @@
     "static/media/icon-delete.svg": "/Ecommerce-React/static/media/icon-delete.1fd1f1f7d9f8ce5557b44ca3470a18b8.svg",
     "index.html": "/Ecommerce-React/index.html",
     "static/media/icon-cart.svg": "/Ecommerce-React/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
-    "main.4517112b.css.map": "/Ecommerce-React/static/css/main.4517112b.css.map",
+    "main.26c2cb1b.css.map": "/Ecommerce-React/static/css/main.26c2cb1b.css.map",
     "main.b5dd51f2.js.map": "/Ecommerce-React/static/js/main.b5dd51f2.js.map",
     "787.dcc73137.chunk.js.map": "/Ecommerce-React/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4517112b.css",
+    "static/css/main.26c2cb1b.css",
     "static/js/main.b5dd51f2.js"
   ]
 }

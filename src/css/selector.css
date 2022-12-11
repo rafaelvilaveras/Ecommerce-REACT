@@ -1,0 +1,135 @@
+.image-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.sl-previous {
+    display: none;
+}
+
+.sl-next {
+    display: none;
+}
+
+.big-image {
+    width: 75%;
+    height: 33vw;
+    text-align: center;
+    background-color: transparent;
+    cursor: zoom-in;
+}
+
+.big-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.small-image {
+    width: 75%;
+    display: flex;
+    padding: 2vw 0;
+    gap: 2vw;
+}
+
+
+.sm-Img-A {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.sm-Img-N {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    
+}
+
+.sm-Img-N:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.active {
+    width: 100%;
+    height: 6.5vw;
+    background-color: transparent;
+    border: 0.25vw solid var(--page-orange);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.sm-img-div {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.6rem;
+}
+
+.notA {
+    width: 100%;
+    height: 6.5vw;
+    border: 0.2vw solid transparent;
+    background-color: transparent;
+}
+
+
+
+
+/* Mobile / 375px */
+
+@media (max-width: 500px) {
+
+    .image-container {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .big-image {
+        width: 100%;
+        height: 90vw;
+    }
+    
+    .big-image img {
+        border-radius: 0;
+    }
+    
+    .small-image {
+        display: none;
+    }
+
+    .se-arrow {
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    .sl-previous {
+        display: flex;
+        padding: 2vw;
+        position: absolute;
+        top: 60vw;
+        left: 3vw;
+        border-radius: 5rem;
+        background-color: var(--page-white);
+    }
+    
+    .sl-next { 
+        display: flex;
+        padding: 2vw;
+        position: absolute;
+        top: 60vw;
+        right: 3vw;
+        border-radius: 5rem;
+        background-color: var(--page-white);
+    }
+
+    .lb-background {
+        display: none;
+    }
+}
+
+/* Mobile / 375px */

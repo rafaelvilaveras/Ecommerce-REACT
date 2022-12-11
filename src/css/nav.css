@@ -1,0 +1,249 @@
+.display-none {
+    display: none;
+}
+
+.nav-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container hr {
+    width: 96%;
+    height: 0.1vw;
+    background-color: var(--page-grayish-blue);
+    align-self: center;
+}
+
+.nav-content-container {
+    display: flex;
+    list-style: none;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    height: 8vw;
+}
+
+.nav-l-r {
+    width: 80%;
+    display: flex;
+    flex: 7;
+    gap: 4vw;
+    align-items: center;
+}
+
+
+.nav-burger-menu {
+    display: none;
+}
+
+.nav-logo {
+    width: 12vw;
+    height: 1.5vw;
+    color: var(--page-very-dark-blue);
+}
+
+.routes-lightbox {
+    height: 100%;
+}
+
+.nav-routes {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    gap: 3vw;
+
+}
+
+.nav-routes a {
+    text-decoration: none;
+    color: var(--page-dark-grayish-blue);
+    box-sizing: border-box;
+    padding: 3.2vw 0;
+}
+
+.nav-routes a:hover {
+    border-bottom: 3px solid var(--page-orange);
+    color: var(--page-black);
+}
+
+.nav-u-c {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav-cart {
+    justify-content: space-between;
+    width: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav-cart img {
+    width: 2vw;
+}
+
+.nav-user {
+    width: 4.5vw;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.nav-user:hover {
+    border: 2px solid var(--page-orange);
+}
+
+.cart-qnt {
+    width: 1.75vw;
+    height: 1.15vw;
+    position: relative;
+    top: -0.5vw;
+    right: -2.5vw;
+    background-color: var(--page-orange);
+    color: var(--page-white);
+    border-radius: 8px;
+    font-size: 1vw;
+    padding: 0.025vw;
+}
+
+
+.cart-qnt-0 {
+    display: none;
+}
+
+.cartbar-container {
+    width: 26vw;
+    background-color: var(--page-white);
+    box-shadow: 0 10px 25px -15px  var(--page-black);
+    position: absolute;
+    top: 7vw;
+    left: 70vw;
+    border-radius: 0.5rem;
+    
+    z-index: 999;
+}
+
+.cartbar-container h4 {
+    padding: 1.5vw;
+    border-bottom: 0.1vw solid var(--page-grayish-blue);
+
+}
+
+.cb-content{
+    text-align: center;
+    font-weight: bold;
+    padding: 6.5vw 0;
+    color: var(--page-dark-grayish-blue);
+}
+
+/* Mobile / 375px */
+
+@media(max-width: 500px) {
+
+
+    .nav-container {
+        width: 100%;
+        padding: 4vw 0;
+    }
+
+    .nav-container hr {
+        display: none;
+    }
+
+    .nav-l-r {
+        gap: 2vw;
+    }
+
+    .nav-burger-menu {
+        display: flex;
+        font-size: 6vw;
+        color: var(--page-dark-grayish-blue);
+    }
+
+    .nav-logo {
+        width: 35vw;
+        height: 4.75vw;
+    }
+
+    /* LEMBRAR DE MODIFICAR */
+
+    .routes-lightbox {
+        width: 100%;
+        background-color: var(--page-black);
+        position: absolute;
+        top: 5vw;
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav-routes {
+        display: flex;
+        flex-direction: column;
+        height: 215vw;
+        padding: 2vw 8vw;
+        font-size: 5vw;
+        background-color: var(--page-white);
+    }
+
+    .nav-routes a {
+        text-decoration: none;
+        color: var(--page-black);
+        font-weight: bolder;
+    }
+
+    .nav-routes a:hover {
+        border-bottom: none;
+    }
+
+    .routes-close {
+        font-size: 7vw;
+        padding-bottom: 8vw;
+        color: var(--page-dark-grayish-blue);
+    }
+    /* LEMBRAR DE MODIFICAR */
+
+    .nav-u-c {
+        gap: 4.6vw;
+    }
+
+    .nav-user {
+        width: 6.5vw;
+    }
+
+    .nav-cart img {
+        width: 6vw;
+    }
+
+    .cartbar-container {
+        width: 95%;
+        height: 80vw;
+        top: 18vw;
+        left: 2.5vw;
+        border-radius: 3rem;
+    }
+
+    .cartbar-container h4 {
+        font-size: 5vw;
+        padding: 3.5vw;
+    }
+
+    .cb-content {
+        font-size: 5vw;
+        padding: 28vw 0;
+    }
+
+    .cart-qnt {
+        width: 4.5vw;
+        height: 3vw;
+        font-size: 2.5vw;
+        top: -0.75vw;
+        right: -7.5vw;
+    }
+
+    
+
+}
+
+/* Mobile / 375px */

@@ -1,0 +1,84 @@
+                    <button
+                        className="lb-previous"
+                    >
+                        <img
+                            src={previous}
+                        ></img>
+                    </button>
+
+                    <button
+                        className="lb-next"
+                    >
+                        <img
+                            src={next}
+                        ></img>
+                    </button>
+
+                    ------------------------ Lightbox -------------------------------------
+
+                    <div 
+                    className="lb-background"
+                    >
+
+
+                    <section className="lb-img-container">
+
+                        <button
+                            className="lb-close"
+                            onClick={() => toggleLb()}
+                        >
+                            <IoClose
+                                className="lb-close-icon"
+                            />
+                        </button>
+
+
+                        <button
+                            className="lb-previous"
+                            onClick={()=> previousImg()}
+                        >
+                            <MdKeyboardArrowLeft
+                                className="lb-arrow"
+                            />
+                        </button>
+
+                        <button
+                            className="lb-next"
+                            onClick={()=> nextImg()}
+                        >
+                            <MdKeyboardArrowRight
+                                className="lb-arrow"
+                            />
+                        </button>
+
+                        <button 
+                        className="bigger-image"
+                        onClick={()=>toggleLb()}
+                        >
+                            <img src={Album[aux].img}></img>
+                        </button>
+                        <div className="smaller-image">
+                            {Album.map((val, index) => {
+                                return(
+                                    <button
+                                        onClick={() => {setAux(index)}}
+                                        className={index === aux ? 'active' : 'notA'}  
+                                        key={index}
+                                    >
+                                        <div className="sm-img-div">
+                                            <img
+                                                className= {index === aux ? 'sm-Img-A' : 'sm-Img-N'}   
+                                                src={val.img}>
+
+                                            </img>
+                                        </div>
+                                    </button>
+                                    
+                                )
+                            })}
+                        </div>
+                    </section>
+
+                    
+
+                </div> 

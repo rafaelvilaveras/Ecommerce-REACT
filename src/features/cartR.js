@@ -18,7 +18,7 @@ export const cartSlice = createSlice({
             state.value.cart = 0
         },
         removeItem: (state, action) => {
-            if(state.value.cart != 0) {
+            if(state.value.cart !== 0) {
                 state.value.cart--
             }
         }

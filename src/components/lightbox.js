@@ -54,7 +54,7 @@ const LightBox = () => {
                     className="bigger-image"
                     onClick={() => {dispatch(toggleLb())}}
                 >
-                    <img src={Album[aux].img}></img>
+                    <img src={Album[aux].img} alt={Album[aux].alt}></img>
                 </button>
                 <div className="smaller-image">
                     {Album.map((val, index) => {
@@ -67,7 +67,9 @@ const LightBox = () => {
                                 <div className="sm-img-div">
                                     <img
                                         className= {index === aux ? 'sm-Img-A' : 'sm-Img-N'}   
-                                        src={val.img}>
+                                        src={val.img}
+                                        alt={val.alt}
+                                    >
 
                                     </img>
                                 </div>

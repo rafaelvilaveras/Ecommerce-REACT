@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import img1 from '../img/image-product-1.jpg';
 import img2 from '../img/image-product-2.jpg';
 import img3 from '../img/image-product-3.jpg';
@@ -21,12 +20,16 @@ export const Product = [
 export const Album = [
   {
     img:img1,
+    alt: 'White shoes with brown detail in front and laterals'
 
   },{
     img:img2,
+    alt: 'White shoes with brown detail in front and laterals'
   },{
     img:img3,
+    alt: 'White shoes with brown detail in front and laterals'
   },{
     img:img4,
+    alt: 'White shoes with brown detail in front and laterals'
   }
 ]

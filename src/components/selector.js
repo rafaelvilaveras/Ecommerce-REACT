@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/selector.css";
-import {MdKeyboardArrowLeft, MdKeyboardArrowRight, MdSlideshow} from "react-icons/md";
+import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { moveSel, toggleLb, changeByIndex } from '../features/selectorR';
 
@@ -71,7 +71,7 @@ const ImgSlider = () => {
             className="big-image"
             onClick={() => {width > 500 ? dispatch(toggleLb()) : dispatch(moveSel({operator: '+', length: Album.length}))}}
             >
-                <img src={Album[num].img}></img>
+                <img src={Album[num].img} alt={Album[num.alt]}></img>
             </button>
             <div className="small-image">
                 {Album.map((val, index) => {
@@ -84,7 +84,9 @@ const ImgSlider = () => {
                         >
                             <img
                                 className= {index === num ? 'sm-Img-A' : 'sm-Img-N'}   
-                                src={val.img}>
+                                src={val.img}
+                                alt={val.alt}    
+                            >
 
                             </img>
                         </button>

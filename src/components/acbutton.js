@@ -1,6 +1,5 @@
 import React from 'react';
 import "../css/acbutton.css";
-import { Product } from "./challengeData";
 import { useDispatch } from 'react-redux';
 import { addCart } from '../features/cartR';
 

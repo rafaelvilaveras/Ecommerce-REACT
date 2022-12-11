@@ -18,7 +18,7 @@ const InnerCart = ({cart}) => {
 
             <section className='innercart-content-container'>
                 <div className='innercart-product-img'>
-                    <img src={Album[0].img}></img>
+                    <img src={Album[0].img} alt={Album[0].alt}></img>
                 </div>
                 <div className='innercart-text-content'>
                     <p className='innercart-item'>{Product[0].title}</p>
@@ -31,7 +31,7 @@ const InnerCart = ({cart}) => {
                 className='innercart-del-button'
                 onClick={() => dispatch(removeItem())}
                 >
-                    <img src={del}></img>
+                    <img src={del} aria-hidden='true'></img>
                 </button>
             </section>
 
